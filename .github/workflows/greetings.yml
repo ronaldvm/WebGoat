@@ -12,8 +12,9 @@ jobs:
         issue-message: 'Message that will be displayed on users'' first issue'
         pr-message: 'Message that will be displayed on users'' first pr'
         
-    - name: Secret Scan
+    - name: Trufflehog Check
       run: echo Secrets Scan Start
-    - uses: max/secret-scan@1.0.0
+    - uses: UnicornGlobal/trufflehog-actions-scan@v1.0.0
+
 
 
