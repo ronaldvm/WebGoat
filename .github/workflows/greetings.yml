@@ -13,9 +13,9 @@ jobs:
         pr-message: 'Message that will be displayed on users'' first pr'
         
     - name: Synopsys Detect
-    - uses: blackducksoftware/github-action@2.0.1
+      uses: blackducksoftware/github-action@2.0.1
       with:
-        args: --blackduck.url="${{ secrets.BLACKDUCK_URL}}" --blackduck.api.token="${{ secrets.BLACKDUCK_API_TOKEN}}"
+        args: --blackduck.url="${{ secrets.BLACKDUCK_URL}}" --blackduck.api.token="${{ secrets.BLACKDUCK_API_TOKEN}}" --detect.project.name="P1"
 
 
 
